@@ -4,8 +4,10 @@ import breakfastImage from "../../resources/breakfast.jpg";
 import dinnerImage from "../../resources/dinner.jpg";
 import lunchImage from "../../resources/lunch.jpg";
 
-export const IndexPage = () => {
-  return `
+export const IndexPage = (() => {
+  const root = document.querySelector("#content");
+  const div = document.createElement("div");
+  div.innerHTML = `
     <div class="hero">
       <img src="${heroImage}" alt="hero-img" />
       <div class="hero-inner">
@@ -44,6 +46,14 @@ export const IndexPage = () => {
           </div>
         </div>
       </div>
-    </div>
-  `;
-};
+    </div>`;
+
+  const render = () => {
+    root.innerHTML = '';
+    root.appendChild(div);
+  }
+
+  return {
+    render,
+  };
+})();

@@ -10,7 +10,7 @@ import { MenuPage } from "./pages/menu/menuPage";
   const init = () => {
     cacheDom();
     addEventListeners();
-    html = IndexPage();
+    IndexPage.render();
   }
   const cacheDom = () => {
     navBtns = document.querySelectorAll("nav button");
@@ -24,12 +24,10 @@ import { MenuPage } from "./pages/menu/menuPage";
     const page = e.currentTarget.dataset.page;
     switch (page) {
       case "home":
-        html = IndexPage();
-        render();
+        IndexPage.render();
         break;
       case "menu":
-        html = MenuPage();
-        render();
+        MenuPage.render();
         break;
       case "about":
         break;
@@ -38,9 +36,4 @@ import { MenuPage } from "./pages/menu/menuPage";
 
   // Initialize app
   init();
-
-  const render = () => {
-    root.innerHTML = html;
-  }
-  render();
 })();

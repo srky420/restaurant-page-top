@@ -39,17 +39,21 @@
 }
 
 .hero-inner button {
-  background-color: rgba(250, 250, 250, 0.9);
+  background-color: transparent;
   padding: 1rem 4rem;
   font-family: 'Times New Roman', Times, serif;
   font-weight: 400;
   font-size: 1rem;
   letter-spacing: 2px;
   text-transform: uppercase;
+  border: 2px solid white;
+  border-radius: 3px;
+  color: white;
 }
 
 .hero-inner button:hover {
   background-color: white;
+  color: var(--pr-color);
   cursor: pointer;
 }
 

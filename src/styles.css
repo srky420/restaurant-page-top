@@ -84,6 +84,87 @@ nav button:hover {
   color: white;
 }
 
+/* HERO */
+.hero {
+  height: 100vh;
+  position: relative;
+}
+
+.hero img {
+  position: fixed;
+  object-fit: cover;
+  object-position: top;
+  z-index: -1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.hero-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  text-align: center;
+}
+
+.hero-secondary {
+  height: 20rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.hero-secondary img {
+  object-fit: cover;
+  object-position: top;
+  z-index: -1;
+}
+
+/* HERO SECTION */
+.tab-header {
+  height: 20rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.tab-header img {
+  object-fit: cover;
+  object-position: top;
+  z-index: -1;
+}
+
+.tab-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.tab-header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 20px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
 /* FOOTER */
 footer {
   padding: 5rem 1rem;
@@ -142,5 +223,27 @@ footer h2 {
 
   .footer div {
     text-align: center !important;
+  }
+
+  .tab-header h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .tab-header {
+    height: 15rem;
+  }
+
+  .tab-header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+  }
+}
+
+
+@media screen and (max-width: 380px) {
+  .tab-header h1 {
+    font-size: 2rem;
   }
 }

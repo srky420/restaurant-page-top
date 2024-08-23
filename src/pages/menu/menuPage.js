@@ -50,12 +50,10 @@ export const MenuPage = (() => {
 
   const div = document.createElement("div");
   div.innerHTML = `
-    <div class="hero-secondary">
+    <div class="tab-header">
       <img src="${menuImage}" alt="hero-img" />
-      <div class="hero-inner">
-        <h1>Explore Menu</h1>
-      </div>
-      <div class="hero-overlay"></div>
+      <h1>Explore Menu</h1>
+      <div class="tab-overlay"></div>
     </div>
     <div class="container">
       <h1 class="menu-header">Breakfast Items</h1>

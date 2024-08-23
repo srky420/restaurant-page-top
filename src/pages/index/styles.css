@@ -49,6 +49,7 @@
   border: 2px solid white;
   border-radius: 3px;
   color: white;
+  transition: all 0.2s;
 }
 
 .hero-inner button:hover {

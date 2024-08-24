@@ -1,8 +1,5 @@
 import "./styles.css";
 import menuImage from "../../resources/menu.jpg";
-import breakfastImage from "../../resources/breakfast.jpg";
-import dinnerImage from "../../resources/dinner.jpg";
-import lunchImage from "../../resources/lunch.jpg";
 import { breakfast, lunch, dinner } from "./data";
 
 export const MenuPage = (() => {

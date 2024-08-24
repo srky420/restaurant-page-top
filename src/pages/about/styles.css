@@ -40,6 +40,12 @@
   border: 2px solid var(--pr-color);
   margin: 1rem auto;
   border-radius: 50%;
+  background-color: var(--pr-color);
+  color: white;
+}
+
+.services p {
+  color: rgb(50, 50, 50);
 }
 
 @media screen and (max-width: 768px) {

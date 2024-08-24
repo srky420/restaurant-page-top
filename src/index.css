@@ -50,6 +50,7 @@ button {
 
 .nav-active {
   font-weight: bold;
+  color: white;
 } 
 
 /* HEADER */
@@ -240,7 +241,6 @@ footer h2 {
     letter-spacing: 10px;
   }
 }
-
 
 @media screen and (max-width: 380px) {
   .tab-header h1 {

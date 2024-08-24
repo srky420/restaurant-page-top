@@ -1,20 +1,15 @@
-import "./styles.css";
+import "./index.css";
 import { IndexPage } from "./pages/index/indexPage";
 import { MenuPage } from "./pages/menu/menuPage";
 import { AboutPage } from "./pages/about/aboutPage";
 
 (function () {
-  let html = "";
-  let root = document.querySelector("#content");
-  let navBtns;
+  let navBtns = document.querySelectorAll("nav button");;
 
   const init = () => {
-    cacheDom();
     addEventListeners();
+    navBtns[0].classList.add('nav-active');
     IndexPage.render();
-  };
-  const cacheDom = () => {
-    navBtns = document.querySelectorAll("nav button");
   };
   const addEventListeners = () => {
     navBtns.forEach((btn) => btn.addEventListener("click", handleClick));
@@ -23,6 +18,8 @@ import { AboutPage } from "./pages/about/aboutPage";
   // Event handlers
   const handleClick = (e) => {
     const page = e.currentTarget.dataset.page;
+    navBtns.forEach(btn => btn.classList.remove('nav-active'));
+    e.currentTarget.classList.add('nav-active');
     switch (page) {
       case "home":
         IndexPage.render();

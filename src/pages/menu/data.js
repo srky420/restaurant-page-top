@@ -1,6 +1,12 @@
 import breakfastImage from "../../resources/breakfast.jpg";
 import dinnerImage from "../../resources/dinner.jpg";
 import lunchImage from "../../resources/lunch.jpg";
+import eggCheese from "../../resources/egg-cheese.jpg";
+import avocadoToast from "../../resources/avocado-toast.jpg";
+import sandwich from "../../resources/sandwich.jpg";
+import pizza from "../../resources/pizza.jpg";
+import salmon from "../../resources/salmon.jpg";
+import risotto from "../../resources/risotto.jpg";
 
 export const breakfast = [
   {
@@ -15,14 +21,14 @@ export const breakfast = [
     description:
       "Smashed avocado on toasted whole grain bread, topped with cherry tomatoes, radishes, and a sprinkle of sea salt.",
     price: 10.99,
-    image: breakfastImage,
+    image: avocadoToast,
   },
   {
     name: "Egg & Cheese Croissant",
     description:
       "Fluffy scrambled eggs and melted cheddar on a warm, buttery croissant.",
     price: 7.99,
-    image: breakfastImage,
+    image: eggCheese,
   },
 ];
 export const lunch = [
@@ -38,14 +44,14 @@ export const lunch = [
     description:
       "Juicy grilled chicken breast with lettuce, tomato, and aioli on a toasted bun.",
     price: 11.99,
-    image: lunchImage,
+    image: sandwich,
   },
   {
     name: "Margherita Pizza",
     description:
       "Classic pizza topped with fresh mozzarella, tomatoes, and basil.",
     price: 12.99,
-    image: lunchImage,
+    image: pizza,
   },
 ];
 export const dinner = [
@@ -61,13 +67,13 @@ export const dinner = [
     description:
       "Pan-seared salmon filet with a honey-soy glaze, served with jasmine rice and steamed broccoli.",
     price: 19.99,
-    image: dinnerImage,
+    image: salmon,
   },
   {
     name: "Mushroom Risotto",
     description:
       "Creamy risotto with sautéed mushrooms, Parmesan, and truffle oil.",
     price: 17.99,
-    image: dinnerImage,
+    image: risotto,
   },
 ];
